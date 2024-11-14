@@ -2,7 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class Dec2HexTest {
+public class Dex2HexTest {
 
     public Dex2HexTest()
    {}

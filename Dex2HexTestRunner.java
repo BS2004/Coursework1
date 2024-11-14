@@ -4,9 +4,9 @@ import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 import java.lang.Exception;
 
-public class Dec2HexTestRunner {
+public class Dex2HexTestRunner {
    public static void main(String[] args) {
-      Result result = JUnitCore.runClasses(Dec2HexTest.class);
+      Result result = JUnitCore.runClasses(Dex2HexTest.class);
       int fails = 0;
       try {
           for (Failure failure : result.getFailures()) {
