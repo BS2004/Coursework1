@@ -4,19 +4,21 @@ import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 import java.lang.Exception;
 
-public class Dex2HexTestRunner {
+public class Dec2HexTestRunner {
    public static void main(String[] args) {
-      Result result = JUnitCore.runClasses(Dex2HexTest.class);
+      Result result = JUnitCore.runClasses(Dec2HexTest.class);
       int fails = 0;
-      try{
+      try {
           for (Failure failure : result.getFailures()) {
              System.out.println(failure.toString());
              fails++;
          }
-          if(fails >0)
-            throw  new Exception();
+          if(fails > 0) {
+            throw new Exception();
+          }
           System.out.println(result.wasSuccessful());
       }
+
       catch(Exception e)
       {
           System.out.println("" + fails + " tests failed");

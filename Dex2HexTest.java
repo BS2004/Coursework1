@@ -2,7 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class Dex2HexTest {
+public class Dec2HexTest {
 
     public Dex2HexTest()
    {}
@@ -14,23 +14,23 @@ public class Dex2HexTest {
     }
 
 	@Test
-    void testValidIntegerInput() {
+   public void testValidIntegerInput() {
 
         String[] args = {"15"};
         Dec2Hex.main(args);
 	}
 
 	@Test
-    void testNonIntegerInput() {
+    public void testNonIntegerInput() {
 
         String[] args = {"1.5"};
         Dec2Hex.main(args);
 	}
 
 	@Test
-    void testNoIntegerInput() {
+    public void testNoIntegerInput() {
 
-        String[] args = {""};
+        String[] args = {};
         Dec2Hex.main(args);
 	}
 }
