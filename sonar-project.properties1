@@ -2,3 +2,6 @@
 sonar.projectKey=java-jenkins-sonar
 sonar.sources=.
 sonar.java.binaries=.
+
+sonar.inclusions=**/Dex2Hex.java
+sonar.inclusions=**/Dex2HexTest.java, **/Dex2HexTestRunner.java
