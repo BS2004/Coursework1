@@ -1,36 +1,30 @@
-import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class Dex2HexTest {
 
-    public Dex2HexTest()
-   {}
-    Dec2Hex dec2Hex;
-
-    @Before
-    public void setUp() {
-        dec2Hex = new Dec2Hex();
+    @Test
+    public void testValidIntegerInput() {
+        String[] args = {"15"};
+        String result = Dex2Hex.convertDexToHex(args);
+        String expected = "Converting the Decimal Value 15 to Hex...\n" +
+                          "Hexadecimal representation is: F";
+        assertEquals(expected, result);
     }
 
-	@Test
-   public void testValidIntegerInput() {
-
-        String[] args = {"15"};
-        Dec2Hex.main(args);
-	}
-
-	@Test
+    @Test
     public void testNonIntegerInput() {
-
         String[] args = {"1.5"};
-        Dec2Hex.main(args);
-	}
+        String result = Dex2Hex.convertDexToHex(args);
+        String expected = "Error: Non-integer input provided. Ending Program.";
+        assertEquals(expected, result);
+    }
 
-	@Test
+    @Test
     public void testNoIntegerInput() {
-
         String[] args = {};
-        Dec2Hex.main(args);
-	}
+        String result = Dex2Hex.convertDexToHex(args);
+        String expected = "Error: No input argument provided. Ending Program.";
+        assertEquals(expected, result);
+    }
 }
