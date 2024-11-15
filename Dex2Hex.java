@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Scanner;
 
 class Dec2Hex
 {
@@ -8,7 +9,7 @@ public static int Arg1;
 	if (args.length == 0) {
             System.err.println("Error: No input argument provided. Ending Program.");
         return;
-}
+	}
 
         try {
             Arg1 = Integer.parseInt(args[0]);
