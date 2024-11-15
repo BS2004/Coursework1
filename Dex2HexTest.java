@@ -4,15 +4,6 @@ import org.junit.Before;
 
 public class Dex2HexTest {
 
-	public Dex2HexTest()
-   {}
-    Dex2Hex dex2Hex;
-
-    @Before
-    public void setUp() {
-        dex2Hex = new Dex2Hex();
-    }
-
     @Test
     public void testValidIntegerInput() {
         String[] args = {"15"};
