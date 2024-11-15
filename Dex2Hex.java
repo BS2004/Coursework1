@@ -1,8 +1,6 @@
 import java.util.Scanner;
-import java.util.Scanner;
 
 public class Dex2Hex {
-public static int Arg1;
     public static String convertDexToHex(String[] args) {
         if (args.length == 0) {
             return "Error: No input argument provided. Ending Program.";
