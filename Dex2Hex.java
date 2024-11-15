@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Dex2Hex {
-    public static String convertDexToHex(String[] args) {
+    public static String dexToHexConversion(String[] args) {
         if (args.length == 0) {
             return "Error: No input argument provided. Ending Program.";
         }
@@ -28,6 +28,6 @@ public class Dex2Hex {
     }
 
     public static void main(String[] args) {
-        System.out.println(convertDexToHex(args));
+        System.out.println(dexToHexConversion(args));
     }
 }
